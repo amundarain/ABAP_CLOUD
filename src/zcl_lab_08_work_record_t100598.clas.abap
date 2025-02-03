@@ -5,13 +5,13 @@ CLASS zcl_lab_08_work_record_t100598 DEFINITION
 
   PUBLIC SECTION.
   CLASS-METHODS set_open_new_record IMPORTING IV_DATE       TYPE ZDATE
-                                          IV_FIRST_NAME TYPE STRING
-                                          IV_LAST_NAME  TYPE STRING
-                                          IV_SURNAME    TYPE STRING OPTIONAL.
-    CLASS-METHODS get_open_new_record EXPORTING EX_DATE       TYPE ZDATE
-                                          EX_FIRST_NAME TYPE STRING
-                                          EX_LAST_NAME  TYPE STRING
-                                          EX_SURNAME    TYPE STRING .
+                                              IV_FIRST_NAME TYPE STRING
+                                              IV_LAST_NAME  TYPE STRING
+                                              IV_SURNAME    TYPE STRING OPTIONAL.
+  CLASS-METHODS get_open_new_record EXPORTING EX_DATE       TYPE ZDATE
+                                              EX_FIRST_NAME TYPE STRING
+                                              EX_LAST_NAME  TYPE STRING
+                                              EX_SURNAME    TYPE STRING .
   PROTECTED SECTION.
   PRIVATE SECTION.
   CLASS-DATA:  DATE       TYPE ZDATE,
